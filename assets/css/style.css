@@ -3,12 +3,12 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: linear-gradient(to left, #ff9966,#ff5e62);
+  background: linear-gradient(to left, #b2324a,#8f2538);
   min-height: 100vh;
   margin: 0;
   font-family: 'Montserrat', sans-serif;
+  padding: 0 10px;
 }
-
 .card {
   margin: 20px;
   width: 300px;
@@ -18,55 +18,76 @@ body {
   background: #fff;
   color: #333;
 }
-
 .card:hover {
   transform: translateY(-5px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
-
 .card img {
   height: 200px;
   object-fit: cover;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
-
 @media (max-width: 600px) {
   .card {
-    width: 90%;
+    box-sizing: border-box;
+    margin: 10px 0;
+  }
+  .btn-primary, .btn-secondary {
+    padding: 12px 20px;
+    font-size: 1rem;
+  }
+  .social-icons li {
+    margin: 0 5px;
+  }
+  .social-icons li a {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
   }
 }
-
 .card-body {
   padding: 20px;
 }
-
 .card-title {
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 10px;
-  color: #ff5e62;
+  color: #b2324a;
 }
-
 .card-text {
   font-size: 1rem;
   color: #666;
   margin-bottom: 20px;
 }
-
 .btn-primary {
   display: inline-block;
   padding: 8px 16px;
   font-size: 0.9rem;
   border-radius: 5px;
   text-decoration: none;
-  background-color: #ff5e62;
+  background-color: #b2324a;
   color: #fff;
   transition: background-color 0.3s, transform 0.3s;
 }
-
 .btn-primary:hover {
-  background-color: #ff9966;
+  background-color: #8f2538;
+  transform: scale(1.05);
+}
+.btn-secondary {
+  display: inline-block;
+  padding: 8px 16px;
+  margin-left: 10px;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  text-decoration: none;
+  background-color: #333;
+  color: #fff;
+  transition: background-color 0.3s, transform 0.3s;
+}
+.btn-secondary:hover {
+  background-color: #000;
   transform: scale(1.05);
 }
 .social-icons {
@@ -75,18 +96,15 @@ body {
   align-items: center;
   margin-top: 20px;
 }
-
 .social-icons ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-
 .social-icons li {
   display: inline-block;
   margin: 0 10px;
 }
-
 .social-icons li a {
   display: inline-block;
   width: 40px;
@@ -99,26 +117,19 @@ body {
   font-size: 20px;
   transition: background-color 0.3s, transform 0.3s;
 }
-
 .social-icons li a:hover {
   background-color: #ff9966;
   transform: scale(1.1);
 }
-
 .social-icons li.github a {
   background-color: #333;
 }
-
 .social-icons li.github a:hover {
   background-color: #000;
 }
-
 .social-icons li a i {
   vertical-align: middle;
 }
-
 .social-icons li.github a i {
   font-size: 18px;
 }
-
-
